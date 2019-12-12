@@ -16,6 +16,7 @@ class EventController extends Controller
     {
         //
         $events=Event::all();
+        // echo $events';
         return view("events.index",compact("events"));
     }
 

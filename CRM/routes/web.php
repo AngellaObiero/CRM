@@ -19,6 +19,10 @@ Route::get('/home', 'ClientController@index')->name('home')->middleware('auth');
 // Route::get('/clients', 'ClientController@create');
 // Route::post('/saveclients', 'ClientController@store');
 
+Route::get('/dash', 'Pychart@index');
+Route::post('/analyze', 'Pychart@getSentiment');
+Route::get('test', 'Pychart@chartTest');
+
 Route::resource('/clients', 'ClientController')->middleware('auth');
 Route::resource('/events', 'EventController')->middleware('auth');
 Route::resource('/sms', 'SmsMessageController')->middleware('auth');

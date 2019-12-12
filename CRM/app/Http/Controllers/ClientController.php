@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Client;
+use App\Event;
 use Illuminate\Http\Request;
+use Carbon\Carbon;
 
 class ClientController extends Controller
 {
@@ -40,7 +42,7 @@ class ClientController extends Controller
     {
         //
         $client = new Client();
-
+        $event = new Event;
         $this->validate(
             $request,
             [
@@ -59,6 +61,24 @@ class ClientController extends Controller
 
         $image->move($destinationPath, $input['imagename']);
 
+        // Create an event  on receiving DOB
+        $event->name = $request->get('name');
+        $event->details = $request->get('name')." birthday";
+        $dob = Carbon::parse($request->get('dob'));
+        $current_year = Carbon::now()->year;
+        $day = $dob->day;
+        // return $dob;
+        $month = $dob->month;
+        $new_event_date = Carbon::create($current_year, $month, $day, 0);
+        $event_from = $new_event_date->toTimeString();
+        $event_to = $new_event_date->toTimeString();
+
+        //Pluggin event variables
+        $event->event_date = $new_event_date;
+        $event->time_from = $event_from;
+        $event->time_to = $event_to;
+
+        //
         $client->name = $request->get('name');
         $client->phone = $request->get('phone');
         $client->email = $request->get('email');
@@ -67,6 +87,8 @@ class ClientController extends Controller
         $client->dob=$request->get("dob");
 
         $client->save();
+        //Save event
+        $event->save();
 
         return redirect()->back()->with('success', 'Client saved successfully');
     }

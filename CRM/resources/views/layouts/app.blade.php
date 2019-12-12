@@ -54,7 +54,12 @@
 
         <div class="sidebar-wrapper">
           <ul class="nav">
-
+            <li class="nav-item ">
+                <a class="nav-link" href="{{url('dash')}}">
+                  <i class="material-icons">bubble_chart</i>
+                  <p>Dash</p>
+                </a>
+              </li>
             <li class="nav-item ">
               <a class="nav-link" href="{{url('permissions')}}">
                 <i class="material-icons">bubble_chart</i>
