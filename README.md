@@ -37,6 +37,9 @@ iv.   To test the effectivity of the platform with organizations in Nairobi coun
                                       delivery to measure satisfaction                                                  interactions are seamless
                                       rates                                                                                    
   
+  
+  
+  
   Customer relationships              Use of technologies such as CRMs    TechAdvisory.org, 2017                        Helps understand the practices that
                                       and social media touch points to                                                  exist and how to improve them to help
                                       collect, organize and manage                                                      resonate with the customer individually
