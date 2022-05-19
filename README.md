@@ -32,7 +32,7 @@ iv.   To test the effectivity of the platform with organizations in Nairobi coun
 
 # KEY LITERATURE REVIEWED
 
-# Review Broke Down to: Variables  ||    Measures    ||     Reference    ||     Analysis
+# Review Broken Down to: Variables  ||    Measures    ||     Reference    ||     Analysis
   Individual customer interaction   ||   Use of mobile surveys upon service delivery to measure satisfaction rates  ||   mSurvey & Voice of the customer, 2016   ||       Helps understand what individual interactions are seamless
 
 
