@@ -23,8 +23,11 @@ This influences a company’s ability to gain new customers, maintaining current
 i. The purpose of this study is to build a solution that manages personalized interactions with customers in a seamless way using relevant data
 # Specific Objectives:
 i. To analyze existing customer relationship management practices of organizations in Nairobi county
+
 ii. To review existing company-to-clients interaction channels
+
 iii. To design and develop a digital multi-channel customer relationship management platform
+
 iv.   To test the effectivity of the platform with organizations in Nairobi county
 
 # KEY LITERATURE REVIEWED
